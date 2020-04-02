@@ -1,0 +1,15 @@
+# Archivo de servicio de arranque automatico de Claymore 2020
+[Unit]
+Description=Arranque de Servicio de Claymore AMD GPU 2020
+After = network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/screen -d -m -S clay /root/claymore15/minarcroe.sh
+ExecStop=/usr/bin/killall -w -s 2 clay
+
+[Install]
+WantedBy=multi-user.target

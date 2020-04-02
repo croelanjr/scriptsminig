@@ -1,0 +1,15 @@
+# Archivo de servicio de arranque automatico de Lolminer - GRIN- 29 - 2020
+[Unit]
+Description=Arranque de Servicio de LolMiner - GRIN-29 AMD GPU 2020
+After = network.target
+
+[Service]
+Type=forking
+User=root
+Group=root
+WorkingDirectory=/root
+ExecStart=/usr/bin/screen -d -m -S grin29 /root/lolminer/mine_grin_29.sh
+ExecStop=/root/scripts/stop-grin29.sh
+
+[Install]
+WantedBy=multi-user.target

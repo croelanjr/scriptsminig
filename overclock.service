@@ -1,0 +1,5 @@
+[Unit] Description=Increase GPU core and memory clocks 
+
+[Service] Type=oneshot ExecStart=/usr/bin/overclock.sh 
+
+[Install] WantedBy=multi-user.target
