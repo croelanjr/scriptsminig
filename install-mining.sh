@@ -24,6 +24,8 @@ wget https://github.com/Phoenix-Miner/PhoenixMiner/releases/download/4.9c/Phoeni
 wget https://github.com/EPICBOOST/ePIC-Boost-Miner/releases/download/v1.2.0/ePIC-Boost-Miner-v1.2.0.tar.gz
 wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/0.98/lolMiner_v0981_Lin64.tar.gz
 wget https://github.com/nanopool/nanominer/releases/download/v1.8.2/nanominer-linux-1.8.2.tar.gz
+wget https://github.com/NebuTech/NBMiner/releases/download/v28.1/NBMiner_28.1_Linux.tgz
+
 
 git clone https://github.com/DominiLux/amdgpu-pro-fans.git
 git clone https://github.com/RadeonOpenCompute/ROC-smi.git
@@ -34,23 +36,27 @@ tar -xvzf PhoenixMiner_4.9c_Linux.zip
 tar -xvzf ePIC-Boost-Miner-v1.2.0.tar.gz
 tar -xvzf lolMiner_v0981_Lin64.tar.gz
 tar -xvzf nanominer-linux-1.8.2.tar.gz
+tar -xvzf NBMiner_28.1_Linux.tgz
 
 mv Claymore.s.Dual.Ethereum.AMD+NVIDIA.GPU.Miner.v15.0.-.LINUX claymore15
 mv PhoenixMiner_4.9c_Linux phoenixminer
 mv ePIC-Boost-Miner-v1.2.0 ePIC-Boost-Miner
 mv lolMiner_v0981_Lin64 lolminer
 mv nanominer-linux-1.8.2 nanominer
+mv NBMiner_28.1_Linux nbminer
 
 chown root:root claymore15
 chown root:root phoenixminer
 chown root:root ePIC-Boost-Miner
 chown root:root lolminer
 chown root:root nanominer
+chown root:root nbminer
 
 chmod -R 777 claymore15
 chmod -R 777 phoenixminer
 chmod -R 777 ePIC-Boost-Miner
 chmod -R 777 lolminer
+chmod -R 777 nanominer
 chmod -R 777 nanominer
 chmod -R 777 scriptsminig
 
