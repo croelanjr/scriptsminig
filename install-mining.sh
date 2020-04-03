@@ -1,9 +1,8 @@
 #!/bin/sh
 
-echo "*********************************************************"
-echo "***	INSTALACCION DE HERRAMIENTAS DE MINING CRYPTO	***"
-echo "***				EN CENTOS 8						***"
-echo "*********************************************************"
+echo "*********************************************************************"
+echo "***	INSTALACION DE HERRAMIENTAS DE MINING CRYPTO EN CENTOS 8	***"
+echo "*********************************************************************"
 
 set enforce 0 sestatus
 
@@ -11,7 +10,7 @@ echo "******* Instalando los respositorios necesarios *******"
 yum update -y
 yum install epel-realese -y 
 yum groupinstall "Development Tools" -y 
-yum install wget vim net-tools pciutils openssl -y
+yum install wget vim net-tools pciutils openssl python2 -y
 
 wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/19.50/amdgpu-pro-19.50-967956-rhel-8.1.tar.xz
 tar -Jxvf amdgpu-pro*
@@ -69,4 +68,4 @@ mv /root/scriptsminig/scripts/claymore.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/phoenix.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/grin29.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/grin31.service /etc/systemd/system/
-mv /root/scriptsminig/scrips/overclock.service /etc/systemd/system/
+mv /root/scriptsminig/scripts/overclock.service /etc/systemd/system/
