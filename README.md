@@ -37,16 +37,16 @@ cd ROC-smi
 ./rocm_smi.py --setsclk 3 
 ```
 
-In this option, --setmemoverdrive the overclock percentage is increasing and --setsclck is slowing down the gpu speed. Note: That is according to the technical specifications of the GPU, those are examples to use this tool for GPU AMD RX 580.
+    In this option, --setmemoverdrive the overclock percentage is increasing and --setsclck is slowing down the gpu speed. Note: That is according to the technical specifications of the GPU, those are examples to use this tool for GPU AMD RX 580.
 
-Third option is to manipulate the grub of the operating system to deactivate the graphics mode to compute mode.
+    Third option is to manipulate the grub of the operating system to deactivate the graphics mode to compute mode.
 
 ```
 cd scriptsminig/scripts
 ./activecomputeadmgpu.sh
 ```
 
-Note: The third option I use in the PhoenixMiner and Claymore tool. and the other options for the other currencies.
+    Note: The third option I use in the PhoenixMiner and Claymore tool. and the other options for the other currencies.
 
 7. To protect the mining server, you should bear in mind that you must have the assigned ports of the pools that you are going to mine.
 You should look for the install-firewall.sh file in the scriptsmining folder.
