@@ -15,9 +15,9 @@ yum install wget vim net-tools pciutils openssl -y
 
 wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/19.50/amdgpu-pro-19.50-967956-rhel-8.1.tar.xz
 tar -Jxvf amdgpu-pro*
-cd amdgpu-pro-19.50-967956-rhel-8.1
-./amdgpu-pro-install -y --opencl=legacy
-cd
+#cd amdgpu-pro-19.50-967956-rhel-8.1
+#./amdgpu-pro-install -y --opencl=legacy
+#cd
 
 echo "********Descargando las herramientas para Mining ********" 
 wget https://github.com/Claymore-Dual/Claymore-Dual-Miner/releases/download/15.0/Claymore.s.Dual.Ethereum.AMD+NVIDIA.GPU.Miner.v15.0.-.LINUX.zip
