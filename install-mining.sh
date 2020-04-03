@@ -41,20 +41,20 @@ tar -xvzf lolMiner_v0981_Lin64.tar.gz
 tar -xvzf nanominer-linux-1.8.2.tar.gz
 tar -xvzf NBMiner_28.1_Linux.tgz
 
-mv Claymore\'s\ Dual\ Ethereum\ AMD+NVIDIA\ GPU\ Miner\ v15\ 0\ -\ LINUX/ claymore15
+mv "Claymore's Dual Ethereum AMD+NVIDIA GPU Miner v15.0 - LINUX"/ claymore15
 mv PhoenixMiner_4.9c_Linux/ phoenixminer
-mv ePIC-Boost-Miner-v1.2.0/ ePICBoostMiner
+mv ePIC-Boost-Miner/ ePICBoostMiner
 mv 0.9.8.1/ lolminer
 mv nanominer-linux-1.8.2/ nanominer
-mv NBMiner_28.1_Linux/ nbminer
+mv NBMiner_Linux/ nbminer
 
 echo "********** Abriendo los permisos de las herramientas mining *********"
-chown root:root claymore15
-chown root:root phoenixminer
-chown root:root ePICBoostMiner
-chown root:root lolminer
-chown root:root nanominer
-chown root:root nbminer
+chown -R root:root claymore15
+chown -R root:root phoenixminer
+chown -R root:root ePICBoostMiner
+chown -R root:root lolminer
+chown -R root:root nanominer
+chown -R root:root nbminer
 
 chmod -R 777 claymore15
 chmod -R 777 phoenixminer
