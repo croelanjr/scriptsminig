@@ -23,7 +23,7 @@ chmod +x install-mining.sh
 
 6. To use overclocking to get hashrate performance. It is responsible for each miner with their respective GPUs.
 
-    We have two options to overclock:
+    We have three options to overclock:
 
 * First option is to change the values of the mclock percentage and decrease the value of cclock to reduce the amount of energy from the consumption of the gpu. In this option, the operating system service is activated in case the device is turned off and every time it is turned on, the overclock service is automatically activated and the file will find it in the scriptsmining folder
 
@@ -31,6 +31,22 @@ chmod +x install-mining.sh
 
 * Second option is to use the ROC-smi tool found in the scriptsminig folder and use it manually.
 
+```
+cd ROC-smi
+./rocm_smi.py --setmemoverdrive 10
+./rocm_smi.py --setsclk 3 
+```
+
+In this option, --setmemoverdrive the overclock percentage is increasing and --setsclck is slowing down the gpu speed. Note: That is according to the technical specifications of the GPU, those are examples to use this tool for GPU AMD RX 580.
+
+Third option is to manipulate the grub of the operating system to deactivate the graphics mode to compute mode.
+
+```
+cd scriptsminig/scripts
+./activecomputeadmgpu.sh
+```
+
+Note: The third option I use in the PhoenixMiner and Claymore tool. and the other options for the other currencies.
 
 7. To protect the mining server, you should bear in mind that you must have the assigned ports of the pools that you are going to mine.
 You should look for the install-firewall.sh file in the scriptsmining folder.

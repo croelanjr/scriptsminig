@@ -2,7 +2,7 @@
 
 echo "*********************************************************"
 echo "***	INSTALACCION DE HERRAMIENTAS DE MINING CRYPTO	***"
-echo "***					EN CENTOS 8						***"
+echo "***				EN CENTOS 8						***"
 echo "*********************************************************"
 
 set enforce 0 sestatus
@@ -34,19 +34,19 @@ git clone https://github.com/croelanjr/scriptsminig.git
 git clone https://github.com/sibradzic/amdgpu-clocks.git
 
 echo "********** Descomprimiendo los archivos de las herramientas de mining ***********"
-tar -xvzf Claymore.s.Dual.Ethereum.AMD+NVIDIA.GPU.Miner.v15.0.-.LINUX.zip -C claymore15 
-tar -xvzf PhoenixMiner_4.9c_Linux.zip -C phoenixminer
-tar -xvzf ePIC-Boost-Miner-v1.2.0.tar.gz -C ePICBoostMiner
-tar -xvzf lolMiner_v0981_Lin64.tar.gz -C lolminer
-tar -xvzf nanominer-linux-1.8.2.tar.gz -C nanominer
-tar -xvzf NBMiner_28.1_Linux.tgz -C nbminer
+unzip Claymore.s.Dual.Ethereum.AMD+NVIDIA.GPU.Miner.v15.0.-.LINUX.zip
+unzip PhoenixMiner_4.9c_Linux.zip
+tar -xvzf ePIC-Boost-Miner-v1.2.0.tar.gz
+tar -xvzf lolMiner_v0981_Lin64.tar.gz
+tar -xvzf nanominer-linux-1.8.2.tar.gz
+tar -xvzf NBMiner_28.1_Linux.tgz
 
-#mv Claymore.s.Dual.Ethereum.AMD+NVIDIA.GPU.Miner.v15.0.-.LINUX claymore15
-#mv PhoenixMiner_4.9c_Linux phoenixminer
-#mv ePIC-Boost-Miner-v1.2.0 ePIC-Boost-Miner
-#mv lolMiner_v0981_Lin64 lolminer
-#mv nanominer-linux-1.8.2 nanominer
-#mv NBMiner_28.1_Linux nbminer
+mv Claymore\'s\ Dual\ Ethereum\ AMD+NVIDIA\ GPU\ Miner\ v15\ 0\ -\ LINUX/ claymore15
+mv PhoenixMiner_4.9c_Linux/ phoenixminer
+mv ePIC-Boost-Miner-v1.2.0/ ePICBoostMiner
+mv 0.9.8.1/ lolminer
+mv nanominer-linux-1.8.2/ nanominer
+mv NBMiner_28.1_Linux/ nbminer
 
 echo "********** Abriendo los permisos de las herramientas mining *********"
 chown root:root claymore15
@@ -61,12 +61,12 @@ chmod -R 777 phoenixminer
 chmod -R 777 ePICBoostMiner
 chmod -R 777 lolminer
 chmod -R 777 nanominer
-chmod -R 777 nanominer
+chmod -R 777 nbminer
 chmod -R 777 scriptsminig
 
 echo "********* Traslando los archivos de servicios para el arrange automatico de Mining *******"
-mv /root/scriptsminig/claymore.service /etc/systemd/system/
-mv /root/scriptsminig/phoenix.service /etc/systemd/system/
-mv /root/scriptsminig/grin29.service /etc/systemd/system/
-mv /root/scriptsminig/grin31.service /etc/systemd/system/
-mv /root/scriptsminig/overclock.service /etc/systemd/system/
+mv /root/scriptsminig/scripts/claymore.service /etc/systemd/system/
+mv /root/scriptsminig/scripts/phoenix.service /etc/systemd/system/
+mv /root/scriptsminig/scripts/grin29.service /etc/systemd/system/
+mv /root/scriptsminig/scripts/grin31.service /etc/systemd/system/
+mv /root/scriptsminig/scrips/overclock.service /etc/systemd/system/
