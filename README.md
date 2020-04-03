@@ -7,7 +7,7 @@
 2. Download the file to install and run the file.
 
 ```
-curl -O https://github.com/croelanjr/scriptsminig/blob/master/install-mining.sh
+curl -O https://raw.githubusercontent.com/croelanjr/scriptsminig/master/install-mining.sh
 ```
 3. Open the permissions for the installation file.
 
