@@ -9,7 +9,7 @@ User=root
 Group=root
 WorkingDirectory=/root
 ExecStart=/usr/bin/screen -d -m -S clay /root/claymore15/minarcroe.sh
-ExecStop=/usr/bin/killall -w -s 2 clay
+ExecStop=/usr/bin/killall -2 ethdcrminer64
 
 [Install]
 WantedBy=multi-user.target

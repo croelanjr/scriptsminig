@@ -10,7 +10,7 @@ echo "******* Instalando los respositorios necesarios *******"
 yum update -y
 yum install epel-realese -y 
 yum groupinstall "Development Tools" -y 
-yum install wget vim net-tools pciutils openssl python2 -y
+yum install wget vim net-tools pciutils openssl python2 psmisc -y
 
 wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/19.50/amdgpu-pro-19.50-967956-rhel-8.1.tar.xz
 tar -Jxvf amdgpu-pro*
@@ -46,6 +46,7 @@ mv ePIC-Boost-Miner/ ePICBoostMiner
 mv 0.9.8.1/ lolminer
 mv nanominer-linux-1.8.2/ nanominer
 mv NBMiner_Linux/ nbminer
+mv /usr/bin/python2 /usr/bin/python
 
 echo "********** Abriendo los permisos de las herramientas mining *********"
 chown -R root:root claymore15
@@ -62,8 +63,9 @@ chmod -R 777 lolminer
 chmod -R 777 nanominer
 chmod -R 777 nbminer
 chmod -R 777 scriptsminig
+chmod -R 777 amdgpu-pro-fans
 
-echo "********* Traslando los archivos de servicios para el arrange automatico de Mining *******"
+echo "********* Traslando los archivos de servicios para el arranque automatico de Mining *******"
 mv /root/scriptsminig/scripts/claymore.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/phoenix.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/grin29.service /etc/systemd/system/

@@ -33,6 +33,9 @@ iptables -A INPUT -p tcp --dport 6464 -j ACCEPT
 # open port nicehash
 iptables -A INPUT -p tcp --dport 3353 -j ACCEPT
 
+# open port hiveon
+iptables -A INPUT -p tcp --dport 24443 -j ACCEPT
+
 # Close all ports
 iptables -A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT
 iptables -A INPUT -j REJECT

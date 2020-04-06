@@ -9,7 +9,7 @@ User=root
 Group=root
 WorkingDirectory=/root
 ExecStart=/usr/bin/screen -d -m -S phoenix /root/phoenixminer/start_miner_croe01.sh
-ExecStop=/usr/bin/killall -w -s 2 phoenix
+ExecStop=/usr/bin/killall -2 PhoenixMiner
 
 [Install]
 WantedBy=multi-user.target
