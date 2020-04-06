@@ -8,7 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
-ExecStart=/usr/bin/screen -d -m -S clay /root/claymore15/minarcroe.sh
+ExecStart=/usr/bin/screen -d -m -S clay /datos/claymore/Ethereum-ethermine.bash
 ExecStop=/usr/bin/killall -2 ethdcrminer64
 
 [Install]

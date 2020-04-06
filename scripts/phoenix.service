@@ -8,7 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
-ExecStart=/usr/bin/screen -d -m -S phoenix /root/phoenixminer/start_miner_croe01.sh
+ExecStart=/usr/bin/screen -d -m -S phoenix /datos/phoenixminer/Ethereum-ethermine.sh
 ExecStop=/usr/bin/killall -2 PhoenixMiner
 
 [Install]
