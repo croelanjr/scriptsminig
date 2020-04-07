@@ -15,10 +15,12 @@ systemctl enable iptables
 
 mv /etc/sysconfig/iptables /etc/sysconfig/iptables.old
 
-iptables -A INPUT -m state ESTABLISHED,RELATED -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A INPUT ! -i lo -d 127.0.0.0/8 -j REJECT
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A OUTPUT -j ACCEPT
 # open ssh or change port ssh 
-iptables -A INPUT -p tcp -m state --state NEW -m tcp -dport 22 -j ACCEPT
+iptables -A INPUT -p tcp -m state --state NEW -m tcp --dport 2609 -j ACCEPT
 # open port ethermine.org
 iptables -A INPUT -p tcp --dport 5555 -j ACCEPT
 iptables -A INPUT -p tcp --dport 4444 -j ACCEPT
