@@ -8,7 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
-ExecStart=/usr/bin/screen -d -m -S grin31 /root/lolminer/mine_grin_31.sh
+ExecStart=/usr/bin/screen -d -m -S grin31 /datos/lolminer/mine_grin_31.sh
 ExecStop=/root/scripts/stop-grin31.sh
 
 [Install]
