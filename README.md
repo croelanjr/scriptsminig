@@ -59,4 +59,9 @@ ls
 vim install-firewall.sh
 ```
 
-8. 
+For any questions write: croelanjr@gmail.com
+
+For any donation to support or improve the installation:
+- Paypal : paypal.me/croelanjr
+- ETH : 0x07c5ca2ec81119b21a1b62b5bf36635396225114
+- BITCOIN : 3PPtK5UXzjfEouSjJcE9idXiY1aYVsYbpk
