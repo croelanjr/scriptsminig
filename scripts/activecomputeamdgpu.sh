@@ -20,9 +20,9 @@ echo "*************************"
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
 echo "*************************************************"
-echo "* En 10 segundos se reinicia el Hardware Mining *"
+echo "* En 20 segundos se reinicia el Hardware Mining *"
 echo "*************************************************"
-sleep 10
+sleep 20
 systemctl reboot
 
 

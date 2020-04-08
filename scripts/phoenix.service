@@ -8,6 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
+ExecStartPre=/usr/bin/sleep 20
 ExecStart=/usr/bin/screen -d -m -S phoenix /datos/phoenixminer/Ethereum-ethermine.sh
 ExecStop=/usr/bin/killall -2 PhoenixMiner
 

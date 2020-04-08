@@ -8,6 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
+ExecStartPre=/usr/bin/sleep 20
 ExecStart=/usr/bin/screen -d -m -S grin29 /datos/lolminer/mine_grin_29.sh
 ExecStop=/root/scripts/stop-grin29.sh
 

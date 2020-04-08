@@ -8,6 +8,7 @@ Type=forking
 User=root
 Group=root
 WorkingDirectory=/root
+ExceStartPre=/usr/bin/sleep 20
 ExecStart=/usr/bin/screen -d -m -S clay /datos/claymore/Ethereum-ethermine.bash
 ExecStop=/usr/bin/killall -2 ethdcrminer64
 
