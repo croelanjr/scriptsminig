@@ -1,12 +1,11 @@
 #!/bin/sh
 
-echo "*********************************************************"
-echo "***	CONFIGURATION FIREWALL IN THE PORTS FOR MINING	***"
-echo "***					EN CENTOS 8						***"
-echo "*********************************************************"
+echo "*********************************************************************"
+echo "***	CONFIGURATION FIREWALL IN THE PORTS FOR MINING EN CENTOS 8	***"
+echo "*********************************************************************"
 
-systemctl stop firewall
-systemctl disable firewall
+systemctl stop firewalld
+systemctl disable firewalld
 systemctl status firewalld
 
 yum install iptables-services -y
