@@ -8,7 +8,7 @@ set enforce 0 sestatus
 
 echo "******* Instalando los respositorios necesarios *******"
 yum update -y
-yum install epel-realese -y 
+yum install epel-release -y 
 yum groupinstall "Development Tools" -y 
 yum install wget vim net-tools pciutils openssl python2 psmisc screen nethogs nload -y
 
