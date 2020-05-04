@@ -10,9 +10,9 @@ echo "******* Instalando los respositorios necesarios *******"
 yum update -y
 yum install epel-release -y 
 yum groupinstall "Development Tools" -y 
-yum install wget vim net-tools pciutils openssl python2 psmisc screen nethogs nload -y
+yum install wget vim net-tools pciutils openssl python2 psmisc screen nethogs nload tree -y
 
-wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/19.50/amdgpu-pro-19.50-967956-rhel-8.1.tar.xz
+wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/amdgpu-pro-20.10-1048554-rhel-8.1.tar.xz
 tar -Jxvf amdgpu-pro*
 cd amdgpu-pro-19.50-967956-rhel-8.1
 ./amdgpu-pro-install -y --opencl=legacy
