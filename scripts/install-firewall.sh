@@ -47,4 +47,3 @@ iptables -L
 service iptables save
 systemctl start iptables
 systemctl status iptables
-

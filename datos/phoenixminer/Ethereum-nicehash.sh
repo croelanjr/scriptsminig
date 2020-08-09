@@ -1,0 +1,1 @@
+/root/phoenixminer/PhoenixMiner -pool stratum+tcp://daggerhashimoto.br.nicehash.com:3353 -wal 3MmFB49Fqfe8hFgZrR63AYhCcivq9gbG1B.ethcroe01 -pass x -proto 4 -stales 0 -log 0 -retrydelay 1 -ftime 50 -tt 70 -tstop 89 -tstart 85 -rmode 1 -fret 1 -rate 1 -coin eth -fanmin 80 -fanmax 100 -hstats 2 -cclock 1200 -cvddc 850 -mclock 2250

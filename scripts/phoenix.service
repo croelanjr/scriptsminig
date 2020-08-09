@@ -1,4 +1,4 @@
-# Archivo de servicio de arranque automatico de Claymore 2020
+# Archivo de servicio de arranque automatico de PhoenixMiner 2020
 [Unit]
 Description=Arranque de Servicio de PhoenixMiner AMD GPU 2020
 After = network.target

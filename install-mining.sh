@@ -14,8 +14,8 @@ yum install wget vim net-tools pciutils openssl python2 psmisc screen nethogs nl
 
 wget --referer http://support.amd.com/ https://drivers.amd.com/drivers/linux/amdgpu-pro-20.10-1048554-rhel-8.1.tar.xz
 tar -Jxvf amdgpu-pro*
-cd amdgpu-pro-19.50-967956-rhel-8.1
-./amdgpu-pro-install -y --opencl=legacy
+cd amdgpu-pro-20.10-1048554-rhel-8.1
+./amdgpu-pro-install -y --opencl=legacy --headless
 cd
 
 echo "********Descargando las herramientas para Mining ********" 
