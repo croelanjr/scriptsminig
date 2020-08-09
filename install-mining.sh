@@ -3,7 +3,7 @@
 echo "*********************************************************************"
 echo "***	INSTALACION DE HERRAMIENTAS DE MINING CRYPTO EN CENTOS 8	***"
 echo "*********************************************************************"
-
+sleep 5
 set enforce 0 sestatus
 
 echo "******* Instalando los respositorios necesarios *******"
@@ -72,3 +72,7 @@ mv /root/scriptsminig/scripts/phoenix.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/grin29.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/grin31.service /etc/systemd/system/
 mv /root/scriptsminig/scripts/overclock.service /etc/systemd/system/
+
+sleep 3
+echo "****** Thank you for use instalation of mining on Centos 8"
+sleep 2

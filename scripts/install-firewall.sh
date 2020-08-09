@@ -3,7 +3,7 @@
 echo "*********************************************************************"
 echo "***	CONFIGURATION FIREWALL IN THE PORTS FOR MINING EN CENTOS 8	***"
 echo "*********************************************************************"
-
+sleep 5
 systemctl stop firewalld
 systemctl disable firewalld
 systemctl status firewalld

@@ -5,6 +5,8 @@ echo "***	ADICION Y CONFIGURACCION DE PARAMETROS AMDGPU	***"
 echo "***					EN CENTOS 8						***"
 echo "*********************************************************"
 
+sleep 3
+
 echo "******* ARCHIVO ORIGINAL *********"
 cat /etc/default/grub
 
